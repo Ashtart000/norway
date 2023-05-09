@@ -1,0 +1,165 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    /* max-height: 1204px;
+    min-height: 100vh;
+    max-width: 1920px;
+    min-width: 100vw; */
+    /* background-color: #c4c4c4;
+    background-image: url(./../img/Rectangle.jpg); */
+    background: #C4C4C4;
+    color: #ffffff;
+    position: relative;
+    height: 100vh;
+}
+
+.header-slider {
+    
+}
+
+.header-slider-item {
+    position: relative;
+}
+
+.header-slider-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(181.06deg, rgba(0, 0, 0, 0.2) 0.91%, rgba(255, 255, 255, 0) 116.71%, rgba(255, 255, 255, 0) 116.72%);
+}
+
+.header-slider-img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.header-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 57px 87px 0 76px;
+    z-index: 3;
+}
+
+a {
+    color: #FFFFFF;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 65px;
+    font-weight: 600;
+    font-size: 18px;
+    margin-right: 110px;
+}
+
+.nav-items {}
+
+.nav-hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-end;
+}
+
+.header-title {
+    text-align: center;
+    position: relative;
+}
+
+.subtitle-text {
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 0.55em;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    position: absolute;
+    top: -8px;
+    width: 100%;
+}
+
+.title-text {
+    font-weight: 700;
+    font-size: 250px;
+    background: linear-gradient(15deg, #313131 -3.87%, rgba(255, 255, 255, 0) 36.89%), #FFFFFF;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.header-tips {
+    display: flex;
+    gap: 27px;
+    margin-bottom: 82px;
+}
+
+.tip {
+    width: 417px;
+    height: 108px;
+    /* background: rgba(255, 255, 255, 0.1);
+    filter: blur(3px);
+    border-radius: 5px; */
+    background-image: url('./../img/icons/map-marker-line.svg');
+    background-repeat: no-repeat;
+    background-position: 35px 40px;
+    padding: 34px 0 26px 95px;
+    position: relative;
+}
+
+.tip::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    filter: blur(3px);
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    transition: background-color 0.2s ease-in;
+}
+
+.tip:hover::before {
+    /* filter: blur(0px); */
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.tip-title {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.tip-text {
+    font-size: 16px;
+    opacity: 0.4;
+    margin-top: 4px;
+}
