@@ -93,6 +93,7 @@ a {
 .header-title {
     text-align: center;
     position: relative;
+    width: 100%;
 }
 
 .subtitle-text {
@@ -114,6 +115,16 @@ a {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    position: absolute;
+    top: 32%;
+    left: 78px;
 }
 
 .header-tips {
